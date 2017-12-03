@@ -23,7 +23,7 @@ int main()
 	int macierz13[n][m];
 	int macierz14[m][n];
 
-	int i, a, b, c, X, Y;
+	int i, a, b, c, x, y;
 
 	printf("Wprowadz liczby: \n");
 
@@ -32,10 +32,10 @@ int main()
 		for(a=0; a<m; a++)
 		scanf("%d",&macierz13[i][a]);
 	}
-	for(X=0;X<n;X++)
+	for(x=0;x<n;x++)
 	{
-		for(Y=0;Y<m;Y++)
-		macierz14[Y][X]=macierz13[X][Y];
+		for(y=0;y<m;y++)
+		macierz14[y][x]=macierz13[x][y];
 	}
 
 	printf("\n\n\nMacierz z zad 13: ");
@@ -55,6 +55,6 @@ int main()
 		for(c=0; c<n; c++)
 		printf("%d ",macierz14[b][c]);
 	}
-
+	printf("\n");
 	return 0;
 }
